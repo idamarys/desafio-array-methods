@@ -8,15 +8,18 @@ module.exports = {
 }
 
 function pares(param) {
-    var toReturn = param.filter((item) => item % 2 == 0)
+    var toReturn = param.filter((elemento) => elemento % 2 == 0)
     return toReturn;
 }
 
 function maiorNumero(param) {
+/*
     var toReturn = param[0]
     for (let index = 1; index < param.length; index++) {
         if (param[index] > toReturn) toReturn = param[index]
     }
+*/
+    var toReturn = param.reduce((acumulador, elemento) => Math.max(acumulador, elemento))
     return toReturn;
 }
 
@@ -31,11 +34,11 @@ function alunosAprovados(param) {
 }
 
 function multiploDe5(param) {
-    var toReturn = param.filter(item => item % 5 == 0)
+    var toReturn = param.filter(elemento => elemento % 5 == 0)
     return toReturn;
 }
 
 function multiploDe5EapenasPares(param) {
-    var toReturn = param.filter(item => item % 5 == 0 && item % 2 == 0)
+    var toReturn = param.filter(elemento => elemento % 5 == 0 && elemento % 2 == 0)
     return toReturn;
 }
