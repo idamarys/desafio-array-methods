@@ -1,34 +1,16 @@
-//
+var funcao = require('./funcoes')
+var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
 // 1. Dado um array de números inteiros, crie uma função que retorne um novo array contendo apenas os números pares. Utilize o método filter.
-//
-var array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-function pares(param) {
-    var toReturn;
-    // Faça seu código aqui.
-    // Faça seu código aqui.
-    // Faça seu código aqui.
-    return toReturn;
-  }
-console.log(pares(array1));
+console.log(funcao.pares(array));
 
-//
 // 2. Crie uma função que receba um array de números e retorne o maior número presente no array
-//
-var array2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-function maiorNumero(param) {
-  var toReturn;
-  // Faça seu código aqui.
-  // Faça seu código aqui.
-  // Faça seu código aqui.
-  return toReturn;
-}
-console.log(maiorNumero(array2));
+console.log(funcao.maiorNumero(array));
 
-//
 // 3. Crie uma função que receba um array de pessoas e retorne o primeiro objeto com idade maior ou igual a 40
-//
+
 var pessoas = [
   {
     nome: "joao",
@@ -44,18 +26,10 @@ var pessoas = [
   },
 ];
 
-function maiorIdade(param) {
-  var toReturn;
-  // Faça seu código aqui.
-  // Faça seu código aqui.
-  // Faça seu código aqui.
-  return toReturn;
-}
-console.log(maiorIdade(pessoas));
+console.log(funcao.maiorIdade(pessoas));
 
-//
 // 4. Crie uma função que receba um array de alunos e retorne o apenas os alunos aprovados (nota maior ou igual a 7)
-//
+
 var alunos = [
   {
     nome: "Aluno 1",
@@ -71,39 +45,12 @@ var alunos = [
   },
 ];
 
-function alunosAprovados(param) {
-  var toReturn;
-  // Faça seu código aqui.
-  // Faça seu código aqui.
-  // Faça seu código aqui.
-  return toReturn;
-}
-console.log(alunosAprovados(alunos));
+console.log(funcao.alunosAprovados(alunos));
 
-//
-// 5. Crie uma função que receba um array de numeros e retorne um array contendo apenas os números multiplicados por 5
-//
-var array3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// 5. Crie uma função que receba um array de numeros e retorne um array contendo apenas os números múltiplos de 5
 
-function multiplicaPor5(param) {
-  var toReturn;
-  // Faça seu código aqui.
-  // Faça seu código aqui.
-  // Faça seu código aqui.
-  return toReturn;
-}
-console.log(multiplicaPor5(array3));
+console.log(funcao.multiploDe5(array));
 
-//
-// 5. Crie uma função que receba um array de numeros e retorne um array contendo apenas os números multiplicados por 5 e retorna apenas os que forem pares.
-//
-var array4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// 5. Crie uma função que receba um array de numeros e retorne um array contendo apenas os números múltiplos de 5 e retorna apenas os que forem pares.
 
-function multiplicaPor5EapenasPares(param) {
-  var toReturn;
-  // Faça seu código aqui.
-  // Faça seu código aqui.
-  // Faça seu código aqui.
-  return toReturn;
-}
-console.log(multiplicaPor5EapenasPares(array4));
+console.log(funcao.multiploDe5EapenasPares(array));
